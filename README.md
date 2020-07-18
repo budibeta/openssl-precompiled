@@ -22,8 +22,20 @@ x32 Bit MD (require dll to run)
 - nmake test
 - nmake install_sw
 
-x32 Bit Mt (static, no require dll runtime)
+x32 Bit MT (static, no require dll runtime)
 - nmake clean
 - perl Configure VC-WIN32 --prefix=G:\out\Lib\x32\Release --openssldir=G:\out\SSL no-shared
+- nmake test
+- nmake install_sw
+
+x64 Bit MD (require dll to run)
+- nmake clean
+- perl Configure VC-WIN64A --prefix=G:\out\DLL\x64\Release --openssldir=G:\out\SSL
+- nmake test
+- nmake install_sw
+
+x64 Bit MT (static, no require dll runtime)
+- nmake clean
+- perl Configure VC-WIN64A --prefix=G:\out\Lib\x64\Release --openssldir=G:\out\SSL no-shared
 - nmake test
 - nmake install_sw
